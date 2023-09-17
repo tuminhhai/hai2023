@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DANH SACH</title>
+</head>
+<body>
+    <h1>DANH SACH</h1>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course.title }} - {{ course.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
